@@ -1,9 +1,14 @@
-<header class="header">
+<header class="hero">
+  <div class="hero-inner">
     <h1>Catálogo</h1>
+    <p class="subtitle">Explora nuestros productos destacados. Calidad y diseño pensados para ti.</p>
+  </div>
 </header>
 
-<section class="grid">
+<section class="container">
+  <section class="grid">
     @for (p of products; track p.id) {
         <app-producto-card [product]="p"></app-producto-card>
     }
+  </section>
 </section>
